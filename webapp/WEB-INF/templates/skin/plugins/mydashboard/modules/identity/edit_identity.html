@@ -1,0 +1,199 @@
+<@messages errors=errors />
+<@messages infos=infos />
+<#include "include/popins.html">
+<#include "include/certificate.html">
+<#include "include/franceconnect.html">
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="box box-primary">
+            <div class="box-header">
+                <h3 class="box-title">#i18n{module.mydashboard.identity.component.identity.description}</h3>
+            </div>
+            <div class="box-body">
+                <#if viewMode>
+                <form class="form-horizontal" method="post" action="jsp/site/Portal.jsp?page=mydashboardIdentity&view=getModifyIdentity">
+                    <#else>
+                    <form class="form-horizontal" method="post" action="jsp/site/Portal.jsp?page=mydashboardIdentity&action=doModifyIdentity">
+                        </#if>               
+
+                        <input type="hidden" id="customerId" name="customerId" value="${identity.customerId.value!''}" />
+                        <input type="hidden" id="connectionId" name="connectionId" value="${identity.connectionId.value!''}" />       
+                        <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+                            <div class="form-group">
+                                <i class="fa fa-user fa-5x" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="box-title form-group">#i18n{module.mydashboard.identity.xpage.edit_identity.generalinfo.label}</h4>
+                            <div class="form-group">
+                                <label class="control-label" for="gender" >#i18n{module.mydashboard.identity.xpage.edit_identity.generalinfo.labelGenre} :</label>
+                                <#if viewMode>
+                                    <@comboWithParams name="gender" default_value="${identity.gender.value!}" additionalParameters=" id=\"gender\"  class=\"form-control\" disabled" items=genderlist />
+                                <#else>							
+                                    <@comboWithParams name="gender" default_value="${identity.gender.value!}" additionalParameters=" id=\"gender\"  class=\"form-control\" " items=genderlist  />
+                                </#if>
+                                <@certificate identity.gender />  
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredUsername" >#i18n{module.mydashboard.identity.xpage.edit_identity.generalinfo.labelName} :</label>
+                                <input class="form-control input-sm" type="text" id="preferredUsername" name="preferredUsername" value="${identity.preferredUsername.value!''}" <#if viewMode>readonly</#if>>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName" >
+                                    #i18n{module.mydashboard.identity.xpage.edit_identity.generalinfo.labelBirthName} 
+                                </label>
+                                <input class="form-control input-sm" type="text" id="lastName" name="lastName" value="${identity.lastName.value!}"  <#if viewMode>readonly</#if>>
+                                <@certificate identity.lastName />                           
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="firstname" >#i18n{module.mydashboard.identity.xpage.edit_identity.generalinfo.labelFirstName} :</label>
+                                <input class="form-control" type="text" id="firstname" name="firstname" value="${identity.firstname.value!}"  <#if viewMode>readonly</#if> />
+                                <@certificate identity.firstname />  
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="birthdate" >
+                                    #i18n{module.mydashboard.identity.xpage.edit_identity.generalinfo.labelBirthdate} 
+                                </label>
+                                <input class="form-control" type="text" id="birthdate" name="birthdate" value="${identity.birthdate.value!}" <#if viewMode>readonly</#if> />
+                                 <@certificate identity.birthdate />                      
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="birthplace" >
+                                    #i18n{module.mydashboard.identity.xpage.edit_identity.generalinfo.labelBirthPlace}
+                                </label>
+                                <input class="form-control" type="text" id="birthplace" name="birthplace" value="${identity.birthplace.value!}" <#if viewMode>readonly</#if> />
+                                <@certificate identity.birthplace />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="birthcountry" >
+                                    #i18n{module.mydashboard.identity.xpage.edit_identity.generalinfo.labelBirthCountry}   
+                                </label>
+                                <input class="form-control" type="text" id="birthcountry" name="birthcountry" value="${identity.birthcountry.value!}" <#if viewMode>readonly</#if> />
+                                <@certificate identity.birthcountry />
+                            </div>
+                            <@displayFranceConnectCertifierButton identity/> 
+                        </div>
+                        <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+                            <div>
+                                <h4 class="box-title form-group">#i18n{module.mydashboard.identity.xpage.edit_identity.address.label}</h4>
+                                <div class="form-group">
+                                    <label class="control-label" for="address" >#i18n{module.mydashboard.identity.xpage.edit_identity.address.labelAdress} :</label>
+                                    <input class="form-control" type="text" id="address" name="address" value="${identity.address.value!}" <#if viewMode>readonly</#if> />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="address_detail" >#i18n{module.mydashboard.identity.xpage.edit_identity.address.labelAdressDetail} :</label>
+                                    <input class="form-control" type="text" id="address_detail" name="address_detail" value="${identity.addressDetail.value!}" <#if viewMode>readonly</#if> />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="address_postalcode" >#i18n{module.mydashboard.identity.xpage.edit_identity.address.labelPostalCode} :</label>
+                                    <input class="form-control" type="text" id="address_postalcode" name="address_postalcode" value="${identity.addressPostalcode.value!}" <#if viewMode>readonly</#if> />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="address_city" >#i18n{module.mydashboard.identity.xpage.edit_identity.address.labelCity} :</label>
+                                    <input class="form-control" type="text" id="address_city" name="address_city" value="${identity.addressCity.value!}" <#if viewMode>readonly</#if> />
+                                </div>
+                            </div>
+                            <div>
+                                <br>
+                                <h4 class="box-title form-group">#i18n{module.mydashboard.identity.xpage.edit_identity.contact.label}</h4>
+                                <div class="form-group">
+                                    <label class="control-label" for="email" >#i18n{module.mydashboard.identity.xpage.edit_identity.contact.labelEmail} :</label>
+                                    <input class="form-control" type="text" id="email" name="email" value="${identity.email.value!}" <#if viewMode>readonly</#if> />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="mobile_phone" >#i18n{module.mydashboard.identity.xpage.edit_identity.contact.labelMobilePhone} :</label>
+                                    <input class="form-control" type="text" id="mobile_phone" name="mobile_phone" value="${identity.mobilePhone.value!}" <#if viewMode>readonly</#if> />
+                                    <@certificate identity.mobilePhone />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="phone" >#i18n{module.mydashboard.identity.xpage.edit_identity.contact.labelPhone} :</label>
+                                    <input class="form-control" type="text" id="phone" name="phone" value="${identity.phone.value!}" <#if viewMode>readonly</#if> />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="direction" >#i18n{module.mydashboard.identity.xpage.edit_identity.vdp.direction} :</label>
+                                    <input class="form-control" type="text" id="direction" name="direction" value="${identity.direction.value!}" <#if viewMode>readonly</#if> />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="soi" >#i18n{module.mydashboard.identity.xpage.edit_identity.vdp.soi} :</label>
+                                    <input class="form-control" type="text" id="soi" name="soi" value="${identity.soi.value!}" <#if viewMode>readonly</#if> />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="preferred_contact_mode" >#i18n{module.mydashboard.identity.xpage.edit_identity.contact.preferredContactMode} :</label>
+                                    <#if viewMode>
+                                    <@comboWithParams name="preferred_contact_mode" default_value="${identity.preferredContactMode.value!}" additionalParameters=" id=\"preferred_contact_mode\"  class=\"form-control\" disabled" items=contact_modeList  />
+                                    <#else>							
+                                    <@comboWithParams name="preferred_contact_mode" default_value="${identity.preferredContactMode.value!}" additionalParameters=" id=\"preferred_contact_mode\"  class=\"form-control\" " items=contact_modeList  />
+                                    </#if>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <br>
+                                <h4 class="box-title form-group">#i18n{module.mydashboard.identity.xpage.edit_identity.authentication.label}</h4>
+                                <div class="form-group">
+                                    <label class="control-label" for="login" >#i18n{module.mydashboard.identity.xpage.edit_identity.authentication.labelLogin} :</label>
+                                    <input class="form-control" type="text" id="login" name="login" value="${identity.login.value!}" readonly />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label" for="password" >#i18n{module.mydashboard.identity.xpage.edit_identity.authentication.labelPassword} :</label>
+                                    <input class="form-control" type="password" id="password" name="password" value="password" readonly />
+                                </div>
+                                <div class="form-group">
+                                    <#if viewMode>
+                                    <#else>
+                                    <button type="button" class="btn btn-small btn-primary"><i class="icon-ok icon-white">&nbsp;</i>&nbsp;#i18n{module.mydashboard.identity.xpage.edit_identity.authentication.labelButtonModifyPassword}</button> 
+                                    </#if>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="form-group text-center">
+                                    <#if viewMode>
+                                    <button type="submit" class="btn btn-small btn-primary"><i class="icon-ok icon-white">&nbsp;</i>&nbsp;#i18n{module.mydashboard.identity.xpage.edit_identity.labelButtonModify}</button> 
+                                    <#else>
+                                    <button type="submit" class="btn btn-small btn-primary"><i class="icon-ok icon-white">&nbsp;</i>&nbsp;#i18n{module.mydashboard.identity.xpage.edit_identity.labelButtonValidate}</button> 
+                                    <button class="btn btn-small" name="back" id="back" value="back" title="#i18n{portal.util.labelBack}">
+                                        <i class="icon-remove-circle">&nbsp;</i>&nbsp;#i18n{module.mydashboard.identity.xpage.edit_identity.labelButtonCancel}
+                                    </button>
+                                    </#if>
+                                </div>
+                            </div>
+                        </div>					
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+<#if !viewMode>
+<script type="text/javascript" src="jsp/site/plugins/address/modules/autocomplete/SetupSuggestPOI.js.jsp"></script>
+<script type="text/javascript" src="js/plugins/address/modules/autocomplete/jQuery.suggestPOI.js"></script>
+<script type="text/javascript" src="js/jquery/plugins/ui/jquery.ui.custom-autocomplete.min.js"></script>
+<script type="text/javascript">
+
+    //load css dynamically
+    var loadresource = document.createElement('link');
+    loadresource.setAttribute("rel", "stylesheet");
+    loadresource.setAttribute("type", "text/css");
+    loadresource.setAttribute("href", "js/jquery/plugins/ui/css/jquery-ui.css");
+    document.getElementsByTagName("head")[0].appendChild(loadresource);
+
+    $(window).load(function () {
+        var jAdresse = $('#address');
+        var jAdressePostalcode = $('#address_postalcode');
+        var jAdresseCity = $('#address_city');
+        jAdresse.suggestPOI();
+        jAdresse.bind($.suggestPOI.EVT_SELECT, function (event) {
+            //Use properties from BAN apiinput type. Would not work with suggestPOI.
+            jAdresse.val(event.poi.sourcePOI.properties.name);
+            jAdressePostalcode.val(event.poi.sourcePOI.properties.postcode);
+            jAdresseCity.val(event.poi.sourcePOI.properties.city);
+        });
+    });
+</script>
+</#if>

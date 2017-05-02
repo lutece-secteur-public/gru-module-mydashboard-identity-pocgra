@@ -540,5 +540,74 @@ public class DashboardIdentity
         _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_SOI, soi );
     }
     
+    /**
+     * @return the AdressFacturation number
+     */
+    public DashboardAttribute getAdressFacturation( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION);
+    }
+
+    /**
+     * @param AdressFacturation
+     *            the AdressFacturation
+     */
+    public void setAdressFacturation( DashboardAttribute soi )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION, soi );
+    }
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getAdressFacturationCodePostal( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_CODE_POSTAL);
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setAdressFacturationCodePostal( DashboardAttribute facturationCodePostal )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_CODE_POSTAL, facturationCodePostal );
+    }
+    
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getAdressFacturationComplement( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_COMPLEMENT);
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setAdressFacturationComplement( DashboardAttribute complement )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_COMPLEMENT, complement );
+    }
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getAdressFacturationVille( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_VILLE);
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setAdressFacturationVille( DashboardAttribute complement )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_VILLE, complement );
+    }
+    
 
 }

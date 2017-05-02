@@ -103,6 +103,17 @@ public final class Constants
             "mydashboard.identity.application.user.direction" );
     public static final String PROPERTY_KEY_SOI= AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.soi" );
+    
+    public static final String PROPERTY_KEY_ADRESS_FACTURATION= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.soi.adressFacturation" );
+    public static final String PROPERTY_KEY_ADRESS_FACTURATION_COMPLEMENT= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.adressFacturationComplement" );
+    public static final String PROPERTY_KEY_ADRESS_FACTURATION_CODE_POSTAL= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.adressFacturationCodePostal" );
+    public static final String PROPERTY_KEY_ADRESS_FACTURATION_VILLE= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.adressFacturationVille" );
+    
+    
 
     //Fields validation messages
     public static final String MESSAGE_ERROR_UPDATE_IDENTITY = "module.mydashboard.identity.message.error.identity.update";
@@ -178,6 +189,15 @@ public final class Constants
     public static final String ATTRIBUTE_DB_IDENTITY_FRANCE_CONNECT_CERTIFIED = "franceconnect_certified";
     public static final String ATTRIBUTE_DB_IDENTITY_DIRECTION = "direction";
     public static final String ATTRIBUTE_DB_IDENTITY_SOI = "soi";
+    public static final String ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION= "address_2";
+    public static final String ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_COMPLEMENT= "address_2_detail";
+    public static final String ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_CODE_POSTAL= "address_2_postal_code";
+    public static final String ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_VILLE= "address_2_city";
+    
+    
+    
+    
+    
     
     /**
      * Default constructor

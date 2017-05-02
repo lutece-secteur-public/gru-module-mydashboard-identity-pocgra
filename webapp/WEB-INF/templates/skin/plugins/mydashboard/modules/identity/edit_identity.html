@@ -94,6 +94,25 @@
                                     <input class="form-control" type="text" id="address_city" name="address_city" value="${identity.addressCity.value!}" <#if viewMode>readonly</#if> />
                                 </div>
                             </div>
+                                <div>
+                                <h4 class="box-title form-group">#i18n{module.mydashboard.identity.xpage.edit_identity.address.billing.label}</h4>
+                                <div class="form-group">
+                                    <label class="control-label" for="billing_address" >#i18n{module.mydashboard.identity.xpage.edit_identity.address.billing.labelAdress} :</label>
+                                    <input class="form-control" type="text" id="billing_adress" name="billing_adress" value="${identity.billingAddress.value!}" <#if viewMode>readonly</#if> />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="billing_address_detail" >#i18n{module.mydashboard.identity.xpage.edit_identity.address.billing.labelAdressDetail} :</label>
+                                    <input class="form-control" type="text" id="billing_address_detail" name="billing_address_detail" value="${identity.billingAddressDetail.value!}" <#if viewMode>readonly</#if> />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="billing_address_postalcode" >#i18n{module.mydashboard.identity.xpage.edit_identity.address.billing.labelPostalCode} :</label>
+                                    <input class="form-control" type="text" id="billing_address_postalcode" name="billing_address_postalcode" value="${identity.billingAddressPostalcode.value!}" <#if viewMode>readonly</#if> />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="billing_address_city" >#i18n{module.mydashboard.identity.xpage.edit_identity.address.billing.labelCity} :</label>
+                                    <input class="form-control" type="text" id="billing_address_city" name="billing_address_city" value="${identity.billingAddressCity.value!}" <#if viewMode>readonly</#if> />
+                                </div>
+                            </div>
                             <div>
                                 <br>
                                 <h4 class="box-title form-group">#i18n{module.mydashboard.identity.xpage.edit_identity.contact.label}</h4>
@@ -126,22 +145,7 @@
                                     <@comboWithParams name="preferred_contact_mode" default_value="${identity.preferredContactMode.value!}" additionalParameters=" id=\"preferred_contact_mode\"  class=\"form-control\" " items=contact_modeList  />
                                     </#if>
                                 </div>
-                                <div class="form-group">
-                                    <label class="control-label" for="address_2" >Adresse de facturation  :</label>
-                                    <input class="form-control" type="text" id="address_facturation" name="address_facturation" value="${(identity.adressFacturation.value)!}" <#if viewMode>readonly</#if> />
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label" for="address_facturation_detail" >Complément d'adresse de facturation  :</label>
-                                    <input class="form-control" type="text" id="address_facturation_detail" name="address_facturation_detail" value="${(identity.addressFacturationDetail.value)!}" <#if viewMode>readonly</#if> />
-                                </div>
-                                 <div class="form-group">
-                                    <label class="control-label" for="adress_facturation_code_postal" >Code postal adresse de facturation  :</label>
-                                    <input class="form-control" type="text" id="adress_facturation_code_postal" name="adress_facturation_code_postal" value="${(identity.adressFacturationCodePostal.value)!}" <#if viewMode>readonly</#if> />
-                                </div>
-                                  <div class="form-group">
-                                    <label class="control-label" for="adress_facturation_city" >Ville adresse de facturation  :</label>
-                                    <input class="form-control" type="text" id="adress_facturation_city" name="adress_facturation_city" value="${(identity.addressFacturationCity.value)!}" <#if viewMode>readonly</#if> />
-                                </div>
+                              
                                 
 
                             </div>

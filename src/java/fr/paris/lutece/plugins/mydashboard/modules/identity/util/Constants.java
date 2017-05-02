@@ -189,11 +189,7 @@ public final class Constants
     public static final String ATTRIBUTE_DB_IDENTITY_FRANCE_CONNECT_CERTIFIED = "franceconnect_certified";
     public static final String ATTRIBUTE_DB_IDENTITY_DIRECTION = "direction";
     public static final String ATTRIBUTE_DB_IDENTITY_SOI = "soi";
-    public static final String ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION= "address_2";
-    public static final String ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_COMPLEMENT= "address_2_detail";
-    public static final String ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_CODE_POSTAL= "address_2_postal_code";
-    public static final String ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_VILLE= "address_2_city";
-    
+
     
     
     

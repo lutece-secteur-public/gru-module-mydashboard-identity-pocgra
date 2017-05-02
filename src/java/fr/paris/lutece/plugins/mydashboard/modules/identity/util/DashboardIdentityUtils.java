@@ -87,10 +87,6 @@ public class DashboardIdentityUtils
         _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_ACCEPT_SURVEY, Constants.PROPERTY_KEY_ACCEPT_SURVEY );
         _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_DIRECTION, Constants.PROPERTY_KEY_DIRECTION );
         _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_SOI, Constants.PROPERTY_KEY_SOI );
-        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION, Constants.PROPERTY_KEY_ADRESS_FACTURATION);
-        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_COMPLEMENT, Constants.PROPERTY_KEY_ADRESS_FACTURATION_COMPLEMENT);
-        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_CODE_POSTAL, Constants.PROPERTY_KEY_ADRESS_FACTURATION_CODE_POSTAL);
-        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_ADRESS_FACTURATION_VILLE, Constants.PROPERTY_KEY_ADRESS_FACTURATION_VILLE);
         
         
         

@@ -540,6 +540,22 @@ public class DashboardIdentity
         _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_SOI, soi );
     }
     
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getNumBureau( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_NUM_BUREAU );
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setNumBureau( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_NUM_BUREAU, numBureau );
+    }
   
 
 }

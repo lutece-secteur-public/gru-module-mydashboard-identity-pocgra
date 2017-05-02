@@ -104,6 +104,10 @@ public final class Constants
     public static final String PROPERTY_KEY_SOI= AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.soi" );
     
+    public static final String PROPERTY_KEY_NUM_BUREAU= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.numBureau" );
+    
+    
     public static final String PROPERTY_KEY_ADRESS_FACTURATION= AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.soi.adressFacturation" );
     public static final String PROPERTY_KEY_ADRESS_FACTURATION_COMPLEMENT= AppPropertiesService.getProperty( 
@@ -177,7 +181,7 @@ public final class Constants
     public static final String ATTRIBUTE_DB_IDENTITY_ADDRESS_CITY = "address_city";
     public static final String ATTRIBUTE_DB_IDENTITY_BILLING_ADDRESS = "billing_address";
     public static final String ATTRIBUTE_DB_IDENTITY_BILLING_ADDRESS_DETAIL = "billing_address_detail";
-    public static final String ATTRIBUTE_DB_IDENTITY_BILLING_ADDRESS_POSTAL_CODE = "billing_address_postal_code";
+    public static final String ATTRIBUTE_DB_IDENTITY_BILLING_ADDRESS_POSTAL_CODE = "billing_address_postalcode";
     public static final String ATTRIBUTE_DB_IDENTITY_BILLING_ADDRESS_CITY = "billing_address_city";
     public static final String ATTRIBUTE_DB_IDENTITY_EMAIL = "email";
     public static final String ATTRIBUTE_DB_IDENTITY_PHONE = "phone";
@@ -189,6 +193,8 @@ public final class Constants
     public static final String ATTRIBUTE_DB_IDENTITY_FRANCE_CONNECT_CERTIFIED = "franceconnect_certified";
     public static final String ATTRIBUTE_DB_IDENTITY_DIRECTION = "direction";
     public static final String ATTRIBUTE_DB_IDENTITY_SOI = "soi";
+    public static final String ATTRIBUTE_DB_IDENTITY_NUM_BUREAU= "num_bureau";
+    
 
     
     

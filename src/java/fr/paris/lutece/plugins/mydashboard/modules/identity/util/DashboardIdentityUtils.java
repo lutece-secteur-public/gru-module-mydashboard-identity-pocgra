@@ -87,6 +87,8 @@ public class DashboardIdentityUtils
         _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_ACCEPT_SURVEY, Constants.PROPERTY_KEY_ACCEPT_SURVEY );
         _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_DIRECTION, Constants.PROPERTY_KEY_DIRECTION );
         _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_SOI, Constants.PROPERTY_KEY_SOI );
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_NUM_BUREAU, Constants.PROPERTY_KEY_NUM_BUREAU );
+        
         
         
         

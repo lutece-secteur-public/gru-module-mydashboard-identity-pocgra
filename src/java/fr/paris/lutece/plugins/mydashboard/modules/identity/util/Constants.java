@@ -108,15 +108,41 @@ public final class Constants
             "mydashboard.identity.application.user.numBureau" );
     
     
-    public static final String PROPERTY_KEY_ADRESS_FACTURATION= AppPropertiesService.getProperty( 
-            "mydashboard.identity.application.user.soi.adressFacturation" );
-    public static final String PROPERTY_KEY_ADRESS_FACTURATION_COMPLEMENT= AppPropertiesService.getProperty( 
-            "mydashboard.identity.application.user.adressFacturationComplement" );
-    public static final String PROPERTY_KEY_ADRESS_FACTURATION_CODE_POSTAL= AppPropertiesService.getProperty( 
-            "mydashboard.identity.application.user.adressFacturationCodePostal" );
-    public static final String PROPERTY_KEY_ADRESS_FACTURATION_VILLE= AppPropertiesService.getProperty( 
-            "mydashboard.identity.application.user.adressFacturationVille" );
+    public static final String PROPERTY_KEY_tel_pro= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.telPro" );
     
+    
+    public static final String PROPERTY_KEY_CATEGORIE= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.categorie" );
+    public static final String PROPERTY_KEY_NUM_CORPS= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.corps" );
+    public static final String PROPERTY_KEY_NUM_GRADE= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.grade" );
+    public static final String PROPERTY_KEY_POSITION_ADMINISTRATIVE= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.positionAdministrative" );
+    public static final String PROPERTY_KEY_AFFECTECTATION_DATE= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.affectationDate" );
+    public static final String PROPERTY_KEY_ENTITE_JURIDIQUE= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.entiteJuridique" );
+    public static final String PROPERTY_KEY_SERVICE_CENTRAUX= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.serviceCentraux" );
+    public static final String PROPERTY_KEY_NIVEAU= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.niveau" );
+    public static final String PROPERTY_KEY_ENCADRANT= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.encadrant" );
+    public static final String PROPERTY_KEY_RH_NOM_USAGE= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.rhNomUsage" );
+    public static final String PROPERTY_KEY_RH_PRENOM= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.rhPrenom" );
+    public static final String PROPERTY_KEY_RH_TEL= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.rhTel" );
+    public static final String PROPERTY_KEY_UGD_SOI= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.ugdSoi" );
+    public static final String PROPERTY_KEY_RH_UGD_UNITE =AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.ugdUnite" );
+    public static final String PROPERTY_KEY_UGD_UNITE_SOI= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.ugdUniteSoi" );
+ 
     
 
     //Fields validation messages
@@ -194,6 +220,22 @@ public final class Constants
     public static final String ATTRIBUTE_DB_IDENTITY_DIRECTION = "direction";
     public static final String ATTRIBUTE_DB_IDENTITY_SOI = "soi";
     public static final String ATTRIBUTE_DB_IDENTITY_NUM_BUREAU= "num_bureau";
+    public static final String ATTRIBUTE_DB_IDENTITY_TEL_PRO= "tel_pro";
+    public static final String ATTRIBUTE_DB_IDENTITY_CATEGORIE= "categorie";
+    public static final String ATTRIBUTE_DB_IDENTITY_CORPS= "corps";
+    public static final String ATTRIBUTE_DB_IDENTITY_GRADE= "grade";
+    public static final String ATTRIBUTE_DB_IDENTITY_POSITION_ADMINISTRATIVE= "position_administrative";
+    public static final String ATTRIBUTE_DB_IDENTITY_AFFECTION_DATE= "affection_date";
+    public static final String ATTRIBUTE_DB_IDENTITY_ENTITE_JURIDIQUE= "entite_juridique";
+    public static final String ATTRIBUTE_DB_IDENTITY_SERVICE_CENTRAUX= "service_centraux";
+    public static final String ATTRIBUTE_DB_IDENTITY_NIVEAU= "niveau";
+    public static final String ATTRIBUTE_DB_IDENTITY_ENCADRANT= "encadrant";
+    public static final String ATTRIBUTE_DB_IDENTITY_RH_NOM_USAGE= "rh_nom_usage";
+    public static final String ATTRIBUTE_DB_IDENTITY_RH_PRENOM= "rh_prenom";
+    public static final String ATTRIBUTE_DB_IDENTITY_RH_TEL= "rh_tel";
+    public static final String ATTRIBUTE_DB_IDENTITY_UGD_SOI= "ugd_soi";
+    public static final String ATTRIBUTE_DB_IDENTITY_UGD_UNITE= "ugd_unite";
+    public static final String ATTRIBUTE_DB_IDENTITY_UGD_UNITE_SOI= "ugd_unite_soi";
     
 
     

@@ -556,6 +556,282 @@ public class DashboardIdentity
     {
         _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_NUM_BUREAU, numBureau );
     }
-  
+    
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getTelPro( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_TEL_PRO );
+    }
 
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setTelPro( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_TEL_PRO, numBureau );
+    } /**
+     * @return the soi number
+     */
+    public DashboardAttribute getCategorie( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_CATEGORIE);
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setCategorie( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_CATEGORIE, numBureau );
+    } /**
+     * @return the soi number
+     */
+    public DashboardAttribute getCorps( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_CORPS);
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setCorps( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_CORPS, numBureau );
+    } /**
+     * @return the soi number
+     */
+    public DashboardAttribute getGrade( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_GRADE );
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setGrade( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_GRADE, numBureau );
+    } 
+    
+    
+    
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getPositionAdministrative( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_POSITION_ADMINISTRATIVE);
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setPositionAdministrative( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_POSITION_ADMINISTRATIVE, numBureau );
+    } 
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getAffectationDate()
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_AFFECTION_DATE );
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setAffectationDate( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_AFFECTION_DATE, numBureau );
+    }
+    
+    
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getEntiteJuridique( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_ENTITE_JURIDIQUE );
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setEntiteJuridique( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_ENTITE_JURIDIQUE, numBureau );
+    } 
+
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getServiceCentraux( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_SERVICE_CENTRAUX );
+    }
+    
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setServiceCentraux( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_SERVICE_CENTRAUX, numBureau );
+    } 
+
+    
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getNiveau( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_NIVEAU);
+    }
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setNiveau( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_NIVEAU, numBureau );
+    } /**
+     * @return the soi number
+     */
+    public DashboardAttribute getEncadrant( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_ENCADRANT);
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setEncadrant( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_ENCADRANT, numBureau );
+    } 
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getRhNomUsage( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_RH_NOM_USAGE );
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setRhNomUsage( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_RH_NOM_USAGE, numBureau );
+    }
+
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getRhPrenom( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_RH_PRENOM );
+    }
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setRhPrenom( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_RH_PRENOM, numBureau );
+    } /**
+     * @return the soi number
+     */
+    public DashboardAttribute getRhTel( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_RH_TEL );
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setRhTel( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_RH_TEL, numBureau );
+    } 
+    
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getUgdSoi( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_UGD_SOI);
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setUgdSoi( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_UGD_SOI, numBureau );
+    } 
+    
+    
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getUgdUnite( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_UGD_UNITE);
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setUgdUnite( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_UGD_UNITE, numBureau );
+    } 
+    
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getUgdUniteSoi( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_UGD_UNITE_SOI);
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setUgdUniteSoi( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_UGD_UNITE_SOI, numBureau );
+    } 
+    
+    
+    
+    
 }

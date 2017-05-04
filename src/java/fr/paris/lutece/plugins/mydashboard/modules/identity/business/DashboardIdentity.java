@@ -710,7 +710,9 @@ public class DashboardIdentity
     public void setNiveau( DashboardAttribute numBureau )
     {
         _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_NIVEAU, numBureau );
-    } /**
+    } 
+    
+    /**
      * @return the soi number
      */
     public DashboardAttribute getEncadrant( )
@@ -725,7 +727,25 @@ public class DashboardIdentity
     public void setEncadrant( DashboardAttribute numBureau )
     {
         _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_ENCADRANT, numBureau );
+    }
+    
+    /**
+     * @return the soi number
+     */
+    public DashboardAttribute getIsEncadrant( )
+    {
+        return _mapAttributes.get( Constants.ATTRIBUTE_DB_IDENTITY_IS_ENCADRANT);
+    }
+
+    /**
+     * @param soi
+     *            the soi number
+     */
+    public void setIsEncadrant( DashboardAttribute numBureau )
+    {
+        _mapAttributes.put( Constants.ATTRIBUTE_DB_IDENTITY_IS_ENCADRANT, numBureau );
     } 
+
     
     /**
      * @return the soi number

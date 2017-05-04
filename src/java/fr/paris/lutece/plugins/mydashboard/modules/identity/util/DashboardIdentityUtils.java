@@ -87,14 +87,25 @@ public class DashboardIdentityUtils
         _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_ACCEPT_SURVEY, Constants.PROPERTY_KEY_ACCEPT_SURVEY );
         _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_DIRECTION, Constants.PROPERTY_KEY_DIRECTION );
         _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_SOI, Constants.PROPERTY_KEY_SOI );
-        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_NUM_BUREAU, Constants.PROPERTY_KEY_NUM_BUREAU );
-        
-        
-        
-        
-        
-        
-    }
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_NUM_BUREAU, Constants.PROPERTY_KEY_NUM_BUREAU);
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_TEL_PRO, Constants.PROPERTY_KEY_TEL_PRO );
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_CATEGORIE, Constants.PROPERTY_KEY_CATEGORIE );
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_CORPS, Constants.PROPERTY_KEY_CORPS);
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_GRADE, Constants.PROPERTY_KEY_GRADE );
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_POSITION_ADMINISTRATIVE, Constants.PROPERTY_KEY_POSITION_ADMINISTRATIVE );
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_AFFECTION_DATE, Constants.PROPERTY_KEY_AFFECTECTATION_DATE );
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_ENTITE_JURIDIQUE, Constants.PROPERTY_KEY_ENTITE_JURIDIQUE);
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_SERVICE_CENTRAUX, Constants.PROPERTY_KEY_SERVICE_CENTRAUX);
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_NIVEAU, Constants.PROPERTY_KEY_NIVEAU );
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_ENCADRANT, Constants.PROPERTY_KEY_ENCADRANT );
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_RH_NOM_USAGE, Constants.PROPERTY_KEY_RH_NOM_USAGE);
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_RH_PRENOM, Constants.PROPERTY_KEY_RH_PRENOM );
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_RH_TEL, Constants.PROPERTY_KEY_RH_TEL );
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_UGD_SOI, Constants.PROPERTY_KEY_UGD_SOI);
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_UGD_UNITE, Constants.PROPERTY_KEY_UGD_UNITE);
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_UGD_UNITE_SOI, Constants.ATTRIBUTE_DB_IDENTITY_UGD_UNITE_SOI );
+        _mapAttributeKeyMatch.put(Constants.ATTRIBUTE_DB_IDENTITY_IS_ENCADRANT, Constants.PROPERTY_KEY_IS_ENCADRANT );
+      }
     
     public static DashboardIdentityUtils getInstance( )
     {

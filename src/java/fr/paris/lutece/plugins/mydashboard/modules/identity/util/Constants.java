@@ -108,15 +108,15 @@ public final class Constants
             "mydashboard.identity.application.user.numBureau" );
     
     
-    public static final String PROPERTY_KEY_tel_pro= AppPropertiesService.getProperty( 
+    public static final String PROPERTY_KEY_TEL_PRO= AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.telPro" );
     
     
     public static final String PROPERTY_KEY_CATEGORIE= AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.categorie" );
-    public static final String PROPERTY_KEY_NUM_CORPS= AppPropertiesService.getProperty( 
+    public static final String PROPERTY_KEY_CORPS= AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.corps" );
-    public static final String PROPERTY_KEY_NUM_GRADE= AppPropertiesService.getProperty( 
+    public static final String PROPERTY_KEY_GRADE= AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.grade" );
     public static final String PROPERTY_KEY_POSITION_ADMINISTRATIVE= AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.positionAdministrative" );
@@ -130,6 +130,8 @@ public final class Constants
             "mydashboard.identity.application.user.niveau" );
     public static final String PROPERTY_KEY_ENCADRANT= AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.encadrant" );
+    public static final String PROPERTY_KEY_IS_ENCADRANT= AppPropertiesService.getProperty( 
+            "mydashboard.identity.application.user.isEncadrant" );
     public static final String PROPERTY_KEY_RH_NOM_USAGE= AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.rhNomUsage" );
     public static final String PROPERTY_KEY_RH_PRENOM= AppPropertiesService.getProperty( 
@@ -138,7 +140,7 @@ public final class Constants
             "mydashboard.identity.application.user.rhTel" );
     public static final String PROPERTY_KEY_UGD_SOI= AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.ugdSoi" );
-    public static final String PROPERTY_KEY_RH_UGD_UNITE =AppPropertiesService.getProperty( 
+    public static final String PROPERTY_KEY_UGD_UNITE =AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.ugdUnite" );
     public static final String PROPERTY_KEY_UGD_UNITE_SOI= AppPropertiesService.getProperty( 
             "mydashboard.identity.application.user.ugdUniteSoi" );
@@ -230,6 +232,7 @@ public final class Constants
     public static final String ATTRIBUTE_DB_IDENTITY_SERVICE_CENTRAUX= "service_centraux";
     public static final String ATTRIBUTE_DB_IDENTITY_NIVEAU= "niveau";
     public static final String ATTRIBUTE_DB_IDENTITY_ENCADRANT= "encadrant";
+    public static final String ATTRIBUTE_DB_IDENTITY_IS_ENCADRANT= "is_encadrant";
     public static final String ATTRIBUTE_DB_IDENTITY_RH_NOM_USAGE= "rh_nom_usage";
     public static final String ATTRIBUTE_DB_IDENTITY_RH_PRENOM= "rh_prenom";
     public static final String ATTRIBUTE_DB_IDENTITY_RH_TEL= "rh_tel";

@@ -90,7 +90,6 @@ public class IdentityXPage extends MVCApplication
     
     private static final String TEMPLATE_GET_VIEW_MODIFY_IDENTITY = "skin/plugins/mydashboard/modules/identity/edit_identity.html";
     private static final String DASHBOARD_APP_CODE = AppPropertiesService.getProperty( Constants.PROPERTY_APPLICATION_CODE );
-    private static final String DASHBOARD_APP_NAME = AppPropertiesService.getProperty( Constants.PROPERTY_APPLICATION_NAME );
     private static final String MARK_GENDER_LIST = "genderlist";
     private static final String MARK_CONTACT_MODE_LIST = "contact_modeList";
     private static final String BEAN_IDENTITYSTORE_SERVICE = "mydashboard-identity.identitystore.service";
@@ -352,7 +351,6 @@ public class IdentityXPage extends MVCApplication
         IdentityChangeDto identityChange = new IdentityChangeDto( );
         AuthorDto author = new AuthorDto( );
         author.setApplicationCode( DASHBOARD_APP_CODE );
-        author.setApplicationName( DASHBOARD_APP_NAME );
         author.setType( AuthorType.TYPE_USER_OWNER.getTypeValue( ) );
 
         identityChange.setIdentity( identity );
